@@ -1,19 +1,82 @@
 debugger;
 const questions = [
+  {
+    letter: [
+      {
+        letter: "a",
+        answer: "abducir",
+        status: 0,
+        question:
+          "CON LA A. Dicho de una supuesta criatura extraterrestre: Apoderarse de alguien",
+      },
+      {
+        letter: "a",
+        answer: "anticuario",
+        status: 0,
+        question: "CON LA A. Persona que colecciona o negocia con antigüedades",
+      },
+      {
+        letter: "a",
+        answer: "arteria",
+        status: 0,
+        question:
+          "CON LA A. Conducto por donde va la sangre desde el corazón a las demás partes del cuerpo",
+      },
+    ],
+  },
 
-    { letter: [{letter: "a", answer: "abducir", status: 0, question: "CON LA A. Dicho de una supuesta criatura extraterrestre: Apoderarse de alguien"},
-          {letter: "a", answer: "anticuario", status: 0, question: "CON LA A. Persona que colecciona o negocia con antigüedades"},
-          {letter: "a", answer: "arteria", status: 0, question: "CON LA A. Conducto por donde va la sangre desde el corazón a las demás partes del cuerpo"}]},
+  {
+    letter: [
+      {
+        letter: "b",
+        answer: "bingo",
+        status: 0,
+        question:
+          "CON LA B. Juego que ha sacado de quicio a todos los 'Skylabers' en las sesiones de precurso",
+      },
+      {
+        letter: "b",
+        answer: "biberón",
+        status: 0,
+        question:
+          "CON LA B. Utensilio para la lactancia artificial que consiste en una botella pequeña con una tetina de goma",
+      },
+      {
+        letter: "b",
+        answer: "bitácora",
+        status: 0,
+        question:
+          "CON LA B. En los barcos, especie de armario que está fijo en la cubierta y situado muy cerca del timón donde se pone la brújula",
+      },
+    ],
+  },
 
-    { letter: [{letter: "b", answer: "bingo", status: 0, question: "CON LA B. Juego que ha sacado de quicio a todos los 'Skylabers' en las sesiones de precurso"},
-          {letter: "b", answer: "biberón", status: 0, question: "CON LA B. Utensilio para la lactancia artificial que consiste en una botella pequeña con una tetina de goma"},
-          {letter: "b", answer: "bitácora", status: 0, question: "CON LA B. En los barcos, especie de armario que está fijo en la cubierta y situado muy cerca del timón donde se pone la brújula"}]},
+  {
+    letter: [
+      {
+        letter: "c",
+        answer: "churumbel",
+        status: 0,
+        question: "CON LA C. Niño, crío, bebé",
+      },
+      {
+        letter: "c",
+        answer: "capo",
+        status: 0,
+        question:
+          "CON LA C. Jefe de la mafia, especialmente de narcotraficantes",
+      },
+      {
+        letter: "c",
+        answer: "cicerone",
+        status: 0,
+        question:
+          "CON LA C. Persona que sirve a otras de guía y les va enseñando y explicando lugares y cosas interesantes",
+      },
+    ],
+  },
 
-    { letter: [{letter: "c", answer: "churumbel", status: 0, question: "CON LA C. Niño, crío, bebé"},
-          {letter: "c", answer: "capo", status: 0, question: "CON LA C. Jefe de la mafia, especialmente de narcotraficantes"},
-          {letter: "c", answer: "cicerone", status: 0, question: "CON LA C. Persona que sirve a otras de guía y les va enseñando y explicando lugares y cosas interesantes"}]},
-
-    /* { letter: "d", answer: "diarrea", status: 0, question: "CON LA D. Anormalidad en la función del aparato digestivo caracterizada por frecuentes evacuaciones y su consistencia líquida"},
+  /* { letter: "d", answer: "diarrea", status: 0, question: "CON LA D. Anormalidad en la función del aparato digestivo caracterizada por frecuentes evacuaciones y su consistencia líquida"},
 
     { letter: "e", answer: "ectoplasma", status: 0, question: "CON LA E. Gelatinoso y se encuentra debajo de la membrana plasmática. Los cazafantasmas medían su radiación"},
 
@@ -59,58 +122,62 @@ const questions = [
 
     { letter: "y", answer: "peyote", status: 0, question: "CONTIENE LA Y. Pequeño cáctus conocido por sus alcaloides psicoactivos utilizado de forma ritual y medicinal por indígenas americanos"}, */
 
-    { letter: [{letter: "z", answer: "zen", status: 0, question: "CON LA Z. Escuela de budismo que busca la experiencia de la sabiduría más allá del discurso racional"},
-          {letter: "z", answer: "zumbado", status: 0, question: "CON LA Z. Participio del verbo zumbar"},
-          {letter: "z", answer: "zócalo", status: 0, question: "CON LA Z. Banda más o menos ancha, cubierta de otro material o pintada, que hay en la parte baja de las paredes de una habitación"}]} ]
+  {
+    letter: [
+      {
+        letter: "z",
+        answer: "zen",
+        status: 0,
+        question:
+          "CON LA Z. Escuela de budismo que busca la experiencia de la sabiduría más allá del discurso racional",
+      },
+      {
+        letter: "z",
+        answer: "zumbado",
+        status: 0,
+        question: "CON LA Z. Participio del verbo zumbar",
+      },
+      {
+        letter: "z",
+        answer: "zócalo",
+        status: 0,
+        question:
+          "CON LA Z. Banda más o menos ancha, cubierta de otro material o pintada, que hay en la parte baja de las paredes de una habitación",
+      },
+    ],
+  },
+];
 
-//function palabraRandom(questions){
-   // return questions.letter[Math.floor((Math.random()*questions.length))]
-//}
-/*questions
-let rosco2 = [];
-let listKeys = Object.keys(letter);
-let randomIndex = Math.floor(Math.random() * listKeys.length);
-let randomObject = questions.letter[listKeys[randomIndex]];
-rosco2.push(randomObject)
-console.log(rosco2);*/
-
-
-function generarPasapalabra(){
-    return rosco2[Math.floor(Math.random()*rosco2.length)];
+function generarPasapalabra() {
+  return rosco2[Math.floor(Math.random() * rosco2.length)];
 }
-    //let palabra = palabraRandom();
-    let rosco = [];
-    let rosco2 = [];
+//let palabra = palabraRandom();
+let rosco = [];
+let rosco2 = [];
 
-    for(let i=0; i<questions.length; i++){
-        for (let Memb in questions[i].letter) {
-            console.log(questions[i].letter[Memb]);
-            rosco2.push(questions[i].letter[Memb])
-           // console.log(rosco2)
-            /*let listKeys = Object.keys(questions[i].letter);
+for (let i = 0; i < questions.length; i++) {
+  for (let Memb in questions[i].letter) {
+    console.log(questions[i].letter[Memb]);
+    rosco2.push(questions[i].letter[Memb]);
+    // console.log(rosco2)
+    /*let listKeys = Object.keys(questions[i].letter);
             let randomIndex = Math.floor(Math.random() * listKeys.length);
             let randomObject = questions[i].letter[listKeys[randomIndex]];
             console.log(randomObject)
             rosco.push(randomObject)*/
+  }
+  console.log(rosco2);
+  let palabra = generarPasapalabra();
+  if (
+    !rosco.includes(palabra) &&
+    !rosco.includes(questions[i].letter[Memb].letter)
+  ) {
+    console.log(palabra);
+    rosco.push(palabra);
+  } else newNumber = generarPasapalabra();
+  //}
+}
 
-            
-        }
-        console.log(rosco2)
-        let palabra = generarPasapalabra();
-        if(!rosco.includes(palabra) && !rosco.includes(questions[i].letter[Memb].letter) ){
-            console.log(palabra)
-            rosco.push(palabra)
-        
-        } else(newNumber = generarPasapalabra());
-        //}
-        
-            
-        
-        
-    }
-    
-    console.log(rosco)
-        
+console.log(rosco);
+
 //}generarPasapalabra();
-
-    
